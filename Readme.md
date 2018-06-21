@@ -14,4 +14,8 @@
 
 ## Записи и вещание занятий
 
+### Группа №1
 * <https://www.youtube.com/playlist?list=PLIWindejDy9BUFeR25HXU8OvTgmKi9cmb>
+
+### Группа №2
+* <https://www.youtube.com/playlist?list=PLIWindejDy9CHqqtPSBIqXtQrx59D3g2M>
