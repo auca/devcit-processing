@@ -23,14 +23,14 @@ Java.
 
 ### Пример
 
-![Пример игры Pong](https://i.imgur.com/KHdYCdx.jpg)
+![Пример игры Pong](https://i.imgur.com/CH5SVDp.jpg)
 
 * Вторая игра должна представлять клон любой 2D игры жанра Подземелье (Dungeon
   Crawl)
 
 ### Пример
 
-![Пример игры Подземелье](https://i.imgur.com/TY6IK3U.png)
+![Пример игры Подземелье](https://i.imgur.com/gEnJBTl.png)
 
 ---
 
