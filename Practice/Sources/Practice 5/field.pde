@@ -20,18 +20,18 @@ void setup() {
 
 void draw() {
   background(0);
-  
+
   int fieldSize = min(width, height);
   int cellSize = fieldSize / level1.length;
-  
+
   int fieldShiftX = width / 2 - fieldSize / 2;
   int fieldShiftY = height / 2 - fieldSize / 2;
-  
+
   for (int y = 0; y < level1.length; ++y) {
     for (int x = 0; x < level1[y].length; ++x) {
       int screenX = fieldShiftX + x * cellSize;
       int screenY = fieldShiftY + y * cellSize;
-      
+
       char cell = level1[y][x];
       switch (cell) {
         case WALL:
@@ -53,11 +53,5 @@ void draw() {
           break;
       }
     }
-  }
-  
-  if (keyPressed) {
-     //if (keyCode == UP) {
-       
-     //} else...
   }
 }
