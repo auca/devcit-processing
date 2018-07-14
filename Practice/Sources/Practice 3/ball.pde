@@ -16,13 +16,13 @@ void draw() {
   background(0);
   
   ellipse(x, y, SIZE, SIZE);
+  
   x += dx;
   y += dy;
-  
-  if (x < HALF_SIZE || x > width - HALF_SIZE) {
+  if (x - HALF_SIZE < 0 || x + HALF_SIZE > width) {
     dx = -dx;
   }
-  if (y < HALF_SIZE || y > height - HALF_SIZE) {
+  if (y - HALF_SIZE < 0 || y + HALF_SIZE > height) {
     dy = -dy;
   }
 }
