@@ -1,6 +1,3 @@
-int levelWidth;
-int levelHeight;
-
 int cellSize;
 
 int fieldWidth;
@@ -16,9 +13,6 @@ void loadImages() {
 }
 
 void calculateScreenData(char[][] level) {
-  levelWidth = level[0].length;
-  levelHeight = level.length;
-
   cellSize = min(width / levelWidth, height / levelHeight);
 
   fieldWidth = levelWidth * cellSize;
