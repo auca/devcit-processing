@@ -1,33 +1,22 @@
 void setup() {
-  size(1000, 500);
+  size(1280, 720);
   background(0);
-
+  
   loadImages();
+  loadSounds();
   loadNextLevel();
 }
 
 void draw() {
   background(0);
-
+  
   drawLevel();
   drawCoins();
   drawHero();
-
-  updateHero();
-  
-  fill(255, 0, 0);
-  textSize(50);
-  text("Coins: "  + heroCoins, 20, 60);
-  textSize(49);
-  fill(255);
-  text("Coins: "  + heroCoins, 21, 60);
+  drawHeroCoinCount();
 }
 
 void keyPressed() {
-  //if (key == ' ') {
-  //  loadNextLevel();
-  //}
-  
   switch (keyCode) {
     case UP:
       moveHero(0, -1);

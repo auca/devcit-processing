@@ -2,35 +2,28 @@ class Coin {
   int x;
   int y;
   
-  boolean collected = false;
-  
-  Coin(int x, int y) {
-    this.x = x;
-    this.y = y;
-  }
-  
-  void pick() {
-    collected = true;
-  }
+  boolean isCollected = false;
 
-  void draw() {
-    if (!collected) {
-      int coinSize = cellSize / 2;
-      int screenX = ((cellSize - coinSize) / 2) + fieldShiftX + x * cellSize;
-      int screenY = ((cellSize - coinSize) / 2) + fieldShiftY + y * cellSize;
+  void pick() {
+    isCollected = true;
+    coinCollectedSound.rewind();
+    coinCollectedSound.play();
+  }
   
-      fill(255, 200, 0);
-      ellipseMode(CORNER);
-      ellipse(screenX, screenY, coinSize, coinSize);
+  void draw() {
+    if (!isCollected) {
+      float screenX = gameAreaX + x * tileSize;
+      float screenY = gameAreaY + y * tileSize;
+      coinSprite.draw(screenX, screenY, tileSize, tileSize);
     }
   }
 }
 
-ArrayList<Coin> coins = new ArrayList<Coin>();
+Coin[] coins = new Coin[0];
 
 void drawCoins() {
-  for (int i = 0; i < coins.size(); ++i) {
-    Coin coin = coins.get(i);
+  for (int i = 0; i < coins.length; ++i) {
+    Coin coin = coins[i];
     coin.draw();
   }
 }

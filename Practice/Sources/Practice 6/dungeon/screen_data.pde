@@ -1,23 +1,26 @@
-int cellSize;
+float tileSize;
+float gameAreaWidth;
+float gameAreaHeight;
+float gameAreaX;
+float gameAreaY;
 
-int fieldWidth;
-int fieldHeight;
-
-int fieldShiftX;
-int fieldShiftY;
+float scoreTextSize = 70;
+float scoreMarginX = 40;
+float scoreMarginY = 70;
 
 PImage wallImage;
+Sprite coinSprite;
 
 void loadImages() {
   wallImage = loadImage("wall_large.png");
+  coinSprite = new Sprite("coin/coin_", 5, ".png", 5);
+  // TODO
 }
 
-void calculateScreenData(char[][] level) {
-  cellSize = min(width / levelWidth, height / levelHeight);
-
-  fieldWidth = levelWidth * cellSize;
-  fieldHeight = levelHeight * cellSize;
-
-  fieldShiftX = (width - fieldWidth) / 2;
-  fieldShiftY = (height - fieldHeight) / 2; 
+void calculateScreenData() {
+  tileSize = min(width / levelWidth, height / levelHeight);
+  gameAreaWidth = levelWidth * tileSize;
+  gameAreaHeight = levelHeight * tileSize;
+  gameAreaX = (width - gameAreaWidth) / 2;
+  gameAreaY = (height - gameAreaHeight) / 2;
 }
