@@ -38,6 +38,7 @@ void drawHero() {
 
 void drawHeroCoinCount() {
   fill(255);
+  textAlign(CORNER);
   textSize(scoreTextSize);
-  text("Coins: " + heroCoins, scoreMarginX, scoreMarginY);
+  text("Coins " + heroCoins, scoreMarginX, scoreMarginY);
 }

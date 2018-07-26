@@ -7,7 +7,7 @@ int level = -1;
 void loadNextLevel() {
   ++level;
   if (level >= LEVELS.length) {
-    // TODO: добавить код для обработки Победы.
+    state = WON_STATE;
     level = 0;
   }
   char[][] rawLevelData = LEVELS[level];

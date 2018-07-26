@@ -11,6 +11,11 @@ float scoreMarginY = 70;
 PImage wallImage;
 Sprite coinSprite;
 
+void loadFonts() {
+  PFont font = createFont("ARCADECLASSIC.TTF", 32);
+  textFont(font);
+}
+
 void loadImages() {
   wallImage = loadImage("wall_large.png");
   coinSprite = new Sprite("coin/coin_", 5, ".png", 5);
