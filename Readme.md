@@ -24,4 +24,4 @@
 
 ### Группа №3
 
-* TBD
+* <https://www.youtube.com/playlist?list=PLIWindejDy9D85CV1aMOtIX1PTQrb3Snj>
