@@ -4,7 +4,7 @@
 
 Информация о курсе, информация о преподавателе, список тем курса
 
-* <https://github.com/auca/itdc-processing/blob/master/Course_Description_Ru_Summer_2018.pdf>
+* <https://github.com/auca/itdc-processing/blob/master/Course_Description_Ru_Fall_2018.pdf>
 
 ## Обсуждение
 
