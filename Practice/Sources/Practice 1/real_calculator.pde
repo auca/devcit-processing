@@ -19,6 +19,7 @@ int centerY = height / 2;
 
 float sum = number1 + number2;
 text(number1 + " + " + number2 + " = " + nf(sum, 0, 1), centerX, centerY - 200);
+//                                       ^ Команда форматирования числа до 1 знака после запятой
 
 float diff = number1 - number2;
 text(number1 + " - " + number2 + " = " + nf(diff, 0, 1), centerX, centerY - 100);
