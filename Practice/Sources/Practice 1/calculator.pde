@@ -16,22 +16,24 @@ textAlign(CENTER, CENTER); // Установка центрирования те
 textSize(100); // Установка размера текста.
 fill(255, 0, 0); // Установка цвета заливки для всех последующих фигур.
 
+int centerX = width / 2;
+int centerY = height / 2;
+
 int sum; // Создание переменной sum.
 sum = number1 + number2;
 //    ^ Выражение сложения двух чисел с последующим присваиванием к переменной sum
-text(number1 + " + " + number2 + " = " + sum, 1280 / 2, 720 / 2 - 200); // Печеть текста на экран.
+text(number1 + " + " + number2 + " = " + sum, centerX, centerY - 200); // Печеть текста на экран.
 //                                                                ^ Поднимаем текст на 200 пикселей выше от центра для
 //                                                                  вертикального центрирования.
 
 int diff = number1 - number2; // Вычитание
-text(number1 + " - " + number2 + " = " + diff, 1280 / 2, 720 / 2 - 100);
+text(number1 + " - " + number2 + " = " + diff, centerX, centerY - 100);
 
 int product = number1 * number2; // Умножение
-text(number1 + " * " + number2 + " = " + product, 1280 / 2, 720 / 2);
+text(number1 + " * " + number2 + " = " + product, centerX, centerY);
 
 int quotient = number1 / number2; // Деление
-text(number1 + " / " + number2 + " = " + quotient, 1280 / 2, 720 / 2 + 100);
+text(number1 + " / " + number2 + " = " + quotient, centerX, centerY + 100);
 
 int remainder = number1 % number2; ; // Остаток от деления
-text(number1 + " % " + number2 + " = " + remainder, 1280 / 2, 720 / 2 + 200);
-
+text(number1 + " % " + number2 + " = " + remainder, centerX, centerY + 200);
