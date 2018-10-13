@@ -22,15 +22,10 @@ void draw() {
   x += dx;
   y += dy;
   
-  if (x + HALF_SIZE > width) {
-    dx = -dx;
-  } else if (x - HALF_SIZE < 0) {
+  if (x + HALF_SIZE > width || x - HALF_SIZE < 0) {
     dx = -dx;
   }
-  
-  if (y + HALF_SIZE > height) {
-    dy = -dy;
-  } else if (y - HALF_SIZE < 0) {
+  if (y + HALF_SIZE > height || y - HALF_SIZE < 0) {
     dy = -dy;
   }
 }
