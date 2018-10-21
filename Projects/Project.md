@@ -83,3 +83,6 @@ Java.
 * [ProGit](https://git-scm.com/book/ru/v2)
 * [Processing](https://processing.org/reference)
 
+### Полезные ссылки
+
+* [Анимация спрайтов](https://github.com/auca/itdc-processing/blob/master/Practice/Sources/Practice%2006/Old/dungeon/sprite.pde)
