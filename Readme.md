@@ -25,3 +25,7 @@
 ### Группа №3
 
 * <https://www.youtube.com/playlist?list=PLIWindejDy9D85CV1aMOtIX1PTQrb3Snj>
+
+### Группа №4
+
+* <https://www.youtube.com/playlist?list=PLIWindejDy9ALrQzYSGfIUQpeKoQRpJ35>
