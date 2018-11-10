@@ -29,3 +29,4 @@
 ### Группа №4
 
 * <https://www.youtube.com/playlist?list=PLIWindejDy9ALrQzYSGfIUQpeKoQRpJ35>
+* <https://hangouts.google.com/hangouts/_/ytl/uQs39TSYny6aK7IqclMOmKrnxroALA1-r9rPdxwKedg=?hl=en_US>
