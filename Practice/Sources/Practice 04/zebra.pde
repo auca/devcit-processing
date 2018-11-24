@@ -1,35 +1,23 @@
-int rectHeight;
+final float LINE_COUNT = 10;
 
-int rectNumber = 1;
-int y = 0;
+float y = 0;
+int i = 0;
 
 void setup() {
-  size(500, 500);
-  background(0); 
-  
-  rectHeight = 50;
+  fullScreen();
+  background(0);
 }
 
 void draw() {
-  /*
-    Решение 1 с конструкцией if с одной веткой
-   */
-  //fill(0);
-  //if (rectNumber % 2 == 0) {
-  //  fill(255);
-  //}
-
-  /*
-    Решение 2 с конструкцией if с двумя ветвями
-   */
-  if (rectNumber % 2 == 0) {
-    fill(255);
-  } else {
-    fill(0);
-  }
+  final float LINE_HEIGHT = height / LINE_COUNT;
   
-  rect(0, y, width, rectHeight);
-
-  y = y + rectHeight;
-  rectNumber = rectNumber + 1;
+  if (i % 2 == 0) {
+    fill(0);
+  } else {
+    fill(255);
+  }
+    
+  rect(0, y, width, LINE_HEIGHT);
+  y += LINE_HEIGHT;
+  i++;
 }
