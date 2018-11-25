@@ -1,4 +1,4 @@
-// Константы Шарик
+// Константы шарика
 
 final int BALL_SIZE = 20;
 final int BALL_HALF_SIZE = BALL_SIZE / 2;
