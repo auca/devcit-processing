@@ -31,4 +31,4 @@
 * <https://www.youtube.com/playlist?list=PLIWindejDy9ALrQzYSGfIUQpeKoQRpJ35>
 * <https://www.youtube.com/playlist?list=PLHcEzCb_lW6cYSX11s8nERoM-qHcqxPwz>
 
-* <https://hangouts.google.com/hangouts/_/ytl/7Sxh2h6Ehv5_m6Tf0YJPbJsHRe19NDOW1bzHYDukKY4=?hl=en_US&authuser=2>
+* <https://hangouts.google.com/hangouts/_/ytl/Ea_uphasYLVrIdT7jnQOyUZQG62OG9PngvbiBDqCz0E=?hl=en_US&authuser=2>
