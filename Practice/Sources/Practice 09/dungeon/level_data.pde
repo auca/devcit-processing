@@ -1,6 +1,6 @@
 final char WALL   = '#';
 final char FLOOR  = ' ';
-final char PLAYER = 'P';
+final char HERO   = 'H';
 final char EXIT   = 'E';
 
 char[][] LEVEL_1 = {
