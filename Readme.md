@@ -31,4 +31,7 @@
 * <https://www.youtube.com/playlist?list=PLIWindejDy9ALrQzYSGfIUQpeKoQRpJ35>
 * <https://www.youtube.com/playlist?list=PLHcEzCb_lW6cYSX11s8nERoM-qHcqxPwz>
 
-* <https://hangouts.google.com/hangouts/_/ytl/Yk6T-SRF9gUA_eR03Wb-tlXLzjhRtgoVPreATfuAdPo=?hl=en_US&authuser=2>
+### Группа №5
+
+* <https://www.youtube.com/playlist?list=PLHcEzCb_lW6cDVh36yPJ9_fFM5-cRGLwZ>
+* <https://hangouts.google.com/hangouts/_/ytl/w0fyPopIYcWWOzoMJdPhFgCzQMoAOvvyx6L4QWDwEPM=?hl=en_US>
