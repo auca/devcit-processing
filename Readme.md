@@ -34,4 +34,7 @@
 ### Группа №5
 
 * <https://www.youtube.com/playlist?list=PLHcEzCb_lW6cDVh36yPJ9_fFM5-cRGLwZ>
-* <https://hangouts.google.com/hangouts/_/ytl/PihwfkRbutXYwlXRtyFrN56O8p8NeJ2PGAfbsgWFKqE=?hl=en_US>
+
+### Группа №6
+
+* <https://hangouts.google.com/hangouts/_/ytl/2xjU_z-LZWBdMPw4R8ENhTSxJqW3VvjI54dYXvcoINM=?hl=en_US>
