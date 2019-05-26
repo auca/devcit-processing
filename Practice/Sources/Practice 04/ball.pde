@@ -1,13 +1,15 @@
-final int SIZE = 20;
-final int HALF_SIZE = SIZE / 2;
+final int RADIUS = 10;
+final int DIAMETER = RADIUS * 2;
 
 int x, y;
-int dx = 5,
-    dy = 5;
+int dx = 5;
+int dy = 5;
 
 void setup() {
-  size(900, 500);
+  fullScreen();
   background(0);
+  fill(255);
+  noStroke();
   
   x = width / 2;
   y = height / 2;
@@ -15,17 +17,16 @@ void setup() {
 
 void draw() {
   background(0);
-  fill(255);
-  noStroke();
-  ellipse(x, y, SIZE, SIZE);
+
+  ellipse(x, y, DIAMETER, DIAMETER);
+  
   x += dx;
-  if (x > width - HALF_SIZE) {
-    dx = -dx;
-  }
-  if (x < 0 + HALF_SIZE) {
+  if (x > width - RADIUS || x < RADIUS) {
     dx = -dx;
   }
 
   y += dy;
-  // TODO
+  if (y > height - RADIUS || y < RADIUS) {
+    dy = -dy;
+  }
 }
