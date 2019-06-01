@@ -1,99 +1,111 @@
-// Константы шарика
-final int SIZE = 20;
-final int HALF_SIZE = SIZE / 2;
-final int RESTART_DELAY = 130;
+// Константы и переменные шарика
 
-// Константы ракеток
+final int RADIUS = 10;
+final int DIAMETER = RADIUS * 2;
+final int RESPAWN_DELAY_DIST = 300;
+
+int x, y;
+int dx = 5;
+int dy = 5;
+
+// Константы и переменные ракеток
+
 final int PADDLE_WIDTH = 10;
 final int PADDLE_HEIGHT = 100;
-final int PADDLE_DY = 4;
+final int PADDLE_HALF_HEIGHT = PADDLE_HEIGHT / 2;
 
-// Константы очков игроков
-final int SCORE_SIZE = 80;
-final int SCORE_MARGIN = 130;
+int leftPaddleX;
+int leftPaddleY;
+int leftPaddleDY = 5;
 
-// Переменные шарика
-int x, y;
-int dx = -3,
-    dy = -3;
+int rightPaddleX;
+int rightPaddleY;
+int rightPaddleDY = 5;
 
-// Переменные ракеток
-int paddleX1, paddleY1;
-int paddleX2, paddleY2;
+final int SCORE_MARGIN_TOP = 50;
+final int SCORE_MARGIN_SIDE = 100;
 
-// Очки игроков
 int leftScore = 0;
 int rightScore = 0;
 
 void setup() {
-  size(900, 500);
+  fullScreen();
+  noStroke();
   background(0);
-  
-  // Начальное положение шарика
+  fill(255);
+  textSize(100);
+  textAlign(CENTER, CENTER);
+
+  // Установка позиции шарика
+
   x = width / 2;
   y = height / 2;
   
-  // Начальное положение ракеток
-  paddleX1 = 0;
-  paddleX2 = width - PADDLE_WIDTH;
-  paddleY1 = paddleY2 = (height - PADDLE_HEIGHT) / 2;
+  // Установка позиций ракеток
+  
+  leftPaddleX = 0;
+  rightPaddleX = width - PADDLE_WIDTH;
+  leftPaddleY = rightPaddleY = height / 2 - PADDLE_HALF_HEIGHT;
 }
 
 void draw() {
   background(0);
-  noStroke();
-  
+
   // Рисование и движение шарика
-  fill(255);
-  rectMode(CENTER);
-  rect(x, y, SIZE, SIZE);
-  rectMode(CORNER);
+
+  ellipse(x, y, DIAMETER, DIAMETER);
+  
   x += dx;
-  if (x < -RESTART_DELAY) {
-    ++rightScore;
-    dx = -dx;
-    x = width / 2;
-    y = height / 2;
-  }
-  if (x > width + RESTART_DELAY) {
+  if (x > width - RADIUS + RESPAWN_DELAY_DIST) {
     ++leftScore;
-    dx = -dx;
+    
     x = width / 2;
     y = height / 2;
+    dx = -dx;
   }
+  if (x < RADIUS - RESPAWN_DELAY_DIST) {
+    ++rightScore;
+    
+    x = width / 2;
+    y = height / 2;
+    dx = -dx;
+  }
+
   y += dy;
-  if (y > height - HALF_SIZE || y < HALF_SIZE) {
+  if (y > height - RADIUS || y < RADIUS) {
     dy = -dy;
   }
-  // Столкновение с левой ракеткой
-  if (x > paddleX1 - HALF_SIZE &&
-      x < paddleX1 + PADDLE_WIDTH + HALF_SIZE &&
-      y > paddleY1 - HALF_SIZE &&
-      y < paddleY1 + PADDLE_HEIGHT + HALF_SIZE) {
-    dx = -dx;
-  }
-
+  
   // Рисование и движение ракеток
-  fill(255);
-  rect(paddleX1, paddleY1, PADDLE_WIDTH, PADDLE_HEIGHT);
-  rect(paddleX2, paddleY2, PADDLE_WIDTH, PADDLE_HEIGHT);
+
+  rect(leftPaddleX, leftPaddleY, PADDLE_WIDTH, PADDLE_HEIGHT);
+  rect(rightPaddleX, rightPaddleY, PADDLE_WIDTH, PADDLE_HEIGHT);
   
   if (keyPressed) {
-    if (key == 'w' || key == 'W' || keyCode == UP) {
-      paddleY1 -= PADDLE_DY;
-      paddleY2 -= PADDLE_DY;
-    } else if (key == 's' || key == 'S' || keyCode == DOWN) {
-      paddleY1 += PADDLE_DY;
-      paddleY2 += PADDLE_DY;
+    if (keyCode == UP) {
+      leftPaddleY -= leftPaddleDY;
+      rightPaddleY -= rightPaddleDY; // TODO: для проекта, позволить двум разным игрокам контролировать свои ракетки
+    } else if (keyCode == DOWN) {
+      leftPaddleY += leftPaddleDY;
+      rightPaddleY += rightPaddleDY;
     }
-    paddleY1 = constrain(paddleY1, 0, height - PADDLE_HEIGHT);
-    paddleY2 = constrain(paddleY2, 0, height - PADDLE_HEIGHT);
-  }
+    
+    if (leftPaddleY < 0) {
+      leftPaddleY = 0;
+    } else if (leftPaddleY + PADDLE_HEIGHT > height) {
+      leftPaddleY = height - PADDLE_HEIGHT;
+    }
 
-  // Очки игроков
-  textSize(SCORE_SIZE);
-  textAlign(RIGHT);
-  text(leftScore, SCORE_MARGIN, SCORE_MARGIN);
-  textAlign(LEFT);
-  text(rightScore, width - SCORE_MARGIN, SCORE_MARGIN);
+    // Не обязательная проверка для одного игрока, но код может быть полезным для варианта с двумя игроками
+    if (rightPaddleY < 0) {
+      rightPaddleY = 0;
+    } else if (rightPaddleY + PADDLE_HEIGHT > height) {
+      rightPaddleY = height - PADDLE_HEIGHT;
+    }
+  }
+  
+  // Счет
+  
+  text(leftScore, SCORE_MARGIN_SIDE, SCORE_MARGIN_TOP);
+  text(rightScore, width - SCORE_MARGIN_SIDE, SCORE_MARGIN_TOP);
 }
