@@ -38,4 +38,4 @@
 ### Группа №6
 
 * <https://www.youtube.com/playlist?list=PLHcEzCb_lW6cJOh2eL8Y5oFAMCE6P7EKW>
-* <https://hangouts.google.com/hangouts/_/ytl/6b9XUe_MKspIbRx96fCnLeDIefG75IfWcI7ZNQeASOs=?hl=en_US>
+* <https://hangouts.google.com/hangouts/_/ytl/NTL6qFulW87j8iAK11VVeg-jRxwM7WKlV_3p0-psaGk=?hl=en_US>
