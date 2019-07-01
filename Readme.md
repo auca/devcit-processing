@@ -38,10 +38,10 @@
 ### Группа №6
 
 * <https://www.youtube.com/playlist?list=PLHcEzCb_lW6cJOh2eL8Y5oFAMCE6P7EKW>
-* <https://hangouts.google.com/hangouts/_/ytl/ZepmJ_mf49-WuACnCu9Z22gOki388tzCQO0d2hujKxM=?hl=en_US>
+* <https://hangouts.google.com/hangouts/_/ytl/zaqZQMvLFlheozd0Mx2HqE3i9wlOuQZNAyWgaSP_YNY=?hl=en_US>
 
 ### Группа №7
 
 * <https://www.youtube.com/playlist?list=PLHcEzCb_lW6dHJY71x6yF69hYqefc_1mB>
-* <https://hangouts.google.com/hangouts/_/ytl/ZepmJ_mf49-WuACnCu9Z22gOki388tzCQO0d2hujKxM=?hl=en_US>
+* <https://hangouts.google.com/hangouts/_/ytl/zaqZQMvLFlheozd0Mx2HqE3i9wlOuQZNAyWgaSP_YNY=?hl=en_US>
 
