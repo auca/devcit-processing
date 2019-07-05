@@ -43,9 +43,9 @@
 ### Группа №7
 
 * <https://www.youtube.com/playlist?list=PLHcEzCb_lW6dHJY71x6yF69hYqefc_1mB>
-* <https://hangouts.google.com/hangouts/_/ytl/k-1qsVH7xFbRyw3y6rfYeBOmC2f_AoQGPZib5v4EXc4=?hl=en_US>
+* <https://hangouts.google.com/hangouts/_/ytl/RcXmqDzsIoC-1sHmCHZeQIfE5qKsRBg2dzK9KQ2vAps=?hl=en_US>
 
 ### Группа №8
 
 * <https://www.youtube.com/playlist?list=PLHcEzCb_lW6f5ekaSk62povxPv3SNxEXc>
-* <https://hangouts.google.com/hangouts/_/ytl/k-1qsVH7xFbRyw3y6rfYeBOmC2f_AoQGPZib5v4EXc4=?hl=en_US>
+* <https://hangouts.google.com/hangouts/_/ytl/RcXmqDzsIoC-1sHmCHZeQIfE5qKsRBg2dzK9KQ2vAps=?hl=en_US>
