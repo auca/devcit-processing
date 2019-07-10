@@ -1,14 +1,13 @@
-final int RADIUS = 10;
-final int DIAMETER = RADIUS * 2;
+final int SIZE = 20;
+final int HALF_SIZE = SIZE / 2;
 
 int x, y;
-int dx = 5;
-int dy = 5;
+int dx = 5,
+    dy = 5;
 
 void setup() {
   fullScreen();
   background(0);
-  fill(255);
   noStroke();
   
   x = width / 2;
@@ -17,16 +16,17 @@ void setup() {
 
 void draw() {
   background(0);
-
-  ellipse(x, y, DIAMETER, DIAMETER);
   
-  x += dx;
-  if (x > width - RADIUS || x < RADIUS) {
-    dx = -dx;
-  }
+  // Ball 1
 
-  y += dy;
-  if (y > height - RADIUS || y < RADIUS) {
+  rectMode(CENTER);
+  rect(x, y, SIZE, SIZE);
+  x += dx; y += dy;
+
+  if (x >= width - HALF_SIZE || x < HALF_SIZE) {
+    dx = -dx;
+  } 
+  if (y >= height - HALF_SIZE || y < HALF_SIZE) {
     dy = -dy;
   }
 }
