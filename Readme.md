@@ -43,7 +43,7 @@
 ### Группа №7
 
 * <https://www.youtube.com/playlist?list=PLHcEzCb_lW6dHJY71x6yF69hYqefc_1mB>
-* <https://hangouts.google.com/hangouts/_/ytl/nctxek-sYMC1vt29vpQYQDPc6txD-4SlnaS7YFGVO14=?hl=en_US>
+* <https://hangouts.google.com/hangouts/_/ytl/jP8JjMD-lYSxXL4hsIxQCCByOOY816lWrVCXbpiJ7E4=?hl=en_US>
 
 ### Группа №8
 
