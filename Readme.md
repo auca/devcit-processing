@@ -48,4 +48,4 @@
 ### Группа №8
 
 * <https://www.youtube.com/playlist?list=PLHcEzCb_lW6f5ekaSk62povxPv3SNxEXc>
-* <https://hangouts.google.com/hangouts/_/ytl/EYf1aZCaKgM3qX2phtpadkbWwEdImX1nlhsDaSLzr6k=?hl=en_US>
+* <https://hangouts.google.com/hangouts/_/ytl/Xsi2Peyvli4SoHumHzYLFL1cGMgK86HoJwRPMcJRJH4=?hl=en_US>
