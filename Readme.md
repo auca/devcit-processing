@@ -49,3 +49,8 @@
 
 * <https://www.youtube.com/playlist?list=PLHcEzCb_lW6f5ekaSk62povxPv3SNxEXc>
 * <https://hangouts.google.com/hangouts/_/ytl/Xsi2Peyvli4SoHumHzYLFL1cGMgK86HoJwRPMcJRJH4=?hl=en_US>
+
+### Группа №9
+
+* <https://www.youtube.com/playlist?list=PLHcEzCb_lW6d8gcyeewxw4MDoqhKLkHCN>
+* <https://hangouts.google.com/hangouts/_/ytl/9e4YSbCmMA3XpASqjSqwZZ4Hyf5f802YLyZ24vZQPgI=?hl=en_US>
