@@ -48,7 +48,7 @@
 ### Группа №8
 
 * <https://www.youtube.com/playlist?list=PLHcEzCb_lW6f5ekaSk62povxPv3SNxEXc>
-* <https://hangouts.google.com/hangouts/_/ytl/Xsi2Peyvli4SoHumHzYLFL1cGMgK86HoJwRPMcJRJH4=?hl=en_US>
+* <https://hangouts.google.com/hangouts/_/ytl/7u3godQakPvg441feWEaTp7Lj65QQtM3IQK_RrhbMDk=?hl=en_US>
 
 ### Группа №9
 
