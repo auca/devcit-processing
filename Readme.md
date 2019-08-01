@@ -53,4 +53,4 @@
 ### Группа №9
 
 * <https://www.youtube.com/playlist?list=PLHcEzCb_lW6d8gcyeewxw4MDoqhKLkHCN>
-* <https://hangouts.google.com/hangouts/_/ytl/tIUpuj_CEgTCrcgB-R7eBix2_PMA0jz1fcjHfG3mbIs=?hl=en_US>
+* <https://hangouts.google.com/hangouts/_/ytl/P387g1I89nd81tuuizIiP185TQwz6iXejmymEwEx5uU=?hl=en_US>
