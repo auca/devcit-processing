@@ -48,7 +48,7 @@
 ### Группа №8
 
 * <https://www.youtube.com/playlist?list=PLHcEzCb_lW6f5ekaSk62povxPv3SNxEXc>
-* <https://www.youtube.com/watch?v=xKKGmfXyyvs>
+* <https://meet.google.com/svh-bons-mfp>
 
 ### Группа №9
 
