@@ -6,12 +6,6 @@
 
 * <https://github.com/auca/itdc-processing/blob/master/Course_Description_Ru_Fall_2018.pdf>
 
-## Обсуждение
-
-Вопросы и ответы по темам курса
-
-* <https://piazza.com/auca.kg/fall2018/itdcprocessing101>
-
 ## Записи и вещание занятий
 
 ### Группа №1
