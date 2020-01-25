@@ -48,3 +48,7 @@
 ### Группа №10
 
 * <https://www.youtube.com/playlist?list=PLHcEzCb_lW6eVoK5gnrkdNZkVu0egmVio>
+
+### Группа №11
+
+* <https://www.youtube.com/playlist?list=PLHcEzCb_lW6fOpjm7zvFjcDCqQoCwJcej>
