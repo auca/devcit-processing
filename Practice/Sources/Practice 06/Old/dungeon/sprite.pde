@@ -12,11 +12,20 @@ class Sprite {
   Sprite(String imagePrefix, int count, String extension, int skip) {
     images = new PImage[count];
 
-    for (int i = 0; i < count; i++) {
-      String fileName = imagePrefix + i + extension;
-      images[i] = loadImage(fileName);
+    if (count <= 10) {
+      for (int i = 0; i < count; i++) {
+        String fileName = imagePrefix + i + extension;
+        images[i] = loadImage(fileName);
+      }
+    } else if (count <= 100) {
+      for (int i = 0; i < count; i++) {
+        String fileName = imagePrefix + (i < 10 ? "0" + i : i) + extension;
+        images[i] = loadImage(fileName);
+      }
+    } else {
+      // TODO
     }
-    
+
     this.skip = skip;
     _skip = skip;
   }
