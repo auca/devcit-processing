@@ -67,4 +67,4 @@
 
 ### Группа №15
 
-* <https://youtube.com/playlist?list=PLHcEzCb_lW6egIB7wFYRObc4a1_LaTy4>
+* <https://youtube.com/playlist?list=PLHcEzCb_lW6egIB7wFYRObc4a1_LaTy4_>
