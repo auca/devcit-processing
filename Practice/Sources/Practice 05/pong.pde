@@ -1,111 +1,76 @@
-// Константы и переменные шарика
+/*
+  Игра Pong
+ */
 
-final int RADIUS = 10;
-final int DIAMETER = RADIUS * 2;
-final int RESPAWN_DELAY_DIST = 300;
+// Ball
 
-int x, y;
-int dx = 5;
-int dy = 5;
+final float BALL_SIZE = 20;
+final float BALL_HALF_SIZE = BALL_SIZE / 2;
 
-// Константы и переменные ракеток
+float ballX;
+float ballY;
+float ballDX = 5;
+float ballDY = 5;
 
-final int PADDLE_WIDTH = 10;
-final int PADDLE_HEIGHT = 100;
-final int PADDLE_HALF_HEIGHT = PADDLE_HEIGHT / 2;
+// Paddles
 
-int leftPaddleX;
-int leftPaddleY;
-int leftPaddleDY = 5;
+final float PADDLE_WIDTH  = 20;
+final float PADDLE_HEIGHT = 120;
+final float PADDLE_HALF_HEIGHT = PADDLE_HEIGHT / 2;
+final float PADDLE_DY = 5;
 
-int rightPaddleX;
-int rightPaddleY;
-int rightPaddleDY = 5;
-
-final int SCORE_MARGIN_TOP = 50;
-final int SCORE_MARGIN_SIDE = 100;
-
-int leftScore = 0;
-int rightScore = 0;
+float leftPaddleX;
+float rightPaddleX;
+float leftPaddleY;
+float rightPaddleY;
 
 void setup() {
   fullScreen();
-  noStroke();
   background(0);
-  fill(255);
-  textSize(100);
-  textAlign(CENTER, CENTER);
-
-  // Установка позиции шарика
-
-  x = width / 2;
-  y = height / 2;
+  noStroke();
   
-  // Установка позиций ракеток
+  // Ball
+  
+  ballX = width / 2;
+  ballY = height / 2;
+  
+  // Paddles
   
   leftPaddleX = 0;
+  leftPaddleY = height / 2 - PADDLE_HALF_HEIGHT;
+  
   rightPaddleX = width - PADDLE_WIDTH;
-  leftPaddleY = rightPaddleY = height / 2 - PADDLE_HALF_HEIGHT;
+  rightPaddleY = leftPaddleY;
 }
 
 void draw() {
   background(0);
-
-  // Рисование и движение шарика
-
-  ellipse(x, y, DIAMETER, DIAMETER);
   
-  x += dx;
-  if (x > width - RADIUS + RESPAWN_DELAY_DIST) {
-    ++leftScore;
-    
-    x = width / 2;
-    y = height / 2;
-    dx = -dx;
+  // Ball
+  
+  circle(ballX, ballY, BALL_SIZE);
+  
+  ballX += ballDX;
+  if ((ballX + BALL_HALF_SIZE > width) || (ballX - BALL_HALF_SIZE < 0)) {
+    ballDX = -ballDX;
   }
-  if (x < RADIUS - RESPAWN_DELAY_DIST) {
-    ++rightScore;
-    
-    x = width / 2;
-    y = height / 2;
-    dx = -dx;
-  }
-
-  y += dy;
-  if (y > height - RADIUS || y < RADIUS) {
-    dy = -dy;
+  ballY += ballDY;
+  if ((ballY + BALL_HALF_SIZE > height) || (ballY - BALL_HALF_SIZE < 0)) {
+    ballDY = -ballDY; // ballDY *= -1;
   }
   
-  // Рисование и движение ракеток
-
+  // Paddles
+  
   rect(leftPaddleX, leftPaddleY, PADDLE_WIDTH, PADDLE_HEIGHT);
   rect(rightPaddleX, rightPaddleY, PADDLE_WIDTH, PADDLE_HEIGHT);
   
   if (keyPressed) {
     if (keyCode == UP) {
-      leftPaddleY -= leftPaddleDY;
-      rightPaddleY -= rightPaddleDY; // TODO: для проекта, позволить двум разным игрокам контролировать свои ракетки
+      leftPaddleY -= PADDLE_DY;
+      rightPaddleY -= PADDLE_DY;
     } else if (keyCode == DOWN) {
-      leftPaddleY += leftPaddleDY;
-      rightPaddleY += rightPaddleDY;
-    }
-    
-    if (leftPaddleY < 0) {
-      leftPaddleY = 0;
-    } else if (leftPaddleY + PADDLE_HEIGHT > height) {
-      leftPaddleY = height - PADDLE_HEIGHT;
-    }
-
-    // Не обязательная проверка для одного игрока, но код может быть полезным для варианта с двумя игроками
-    if (rightPaddleY < 0) {
-      rightPaddleY = 0;
-    } else if (rightPaddleY + PADDLE_HEIGHT > height) {
-      rightPaddleY = height - PADDLE_HEIGHT;
+      leftPaddleY += PADDLE_DY;
+      rightPaddleY += PADDLE_DY;
     }
   }
-  
-  // Счет
-  
-  text(leftScore, SCORE_MARGIN_SIDE, SCORE_MARGIN_TOP);
-  text(rightScore, width - SCORE_MARGIN_SIDE, SCORE_MARGIN_TOP);
 }
