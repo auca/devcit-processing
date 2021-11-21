@@ -1,63 +1,36 @@
 int levelIndex = 0;
-
-char[][] levelData;
 char[][] level;
-
 int levelWidth;
 int levelHeight;
 
 void loadLevel() {
-  levelData = LEVELS[levelIndex];
-  levelWidth = levelData[0].length;
-  levelHeight = levelData.length;
-  
-  ++levelIndex;
-  if (levelIndex > LEVELS.length - 1) {
-    // TODO: поздравь игрока. Он выиграл.
-
-    levelIndex = 0;
-  }
-  
-  level = new char[levelHeight][levelWidth];
-  for (int y = 0; y < levelHeight; ++y) {
-    for (int x = 0; x < levelWidth; ++x) {
-      char cell = levelData[y][x];
-      switch (cell) {
-        case PLAYER:
-          initPlayer(x, y);
-          level[y][x] = FLOOR;
-          break;
-        default:
-          level[y][x] = levelData[y][x];
-          break;
-      }
-    } 
-  }
-  
-  initScreenData();
+  level = LEVELS[levelIndex];
+  levelHeight = level.length;
+  levelWidth  = level[0].length;
 }
 
 void drawLevel() {
-  for (int y = 0; y < levelHeight; ++y) {
-    for (int x = 0; x < levelWidth; ++x) {
-      float screenX = centerShiftX + x * cellSize;
-      float screenY = centerShiftY + y * cellSize;
-      
+  float cellPixelSize = min(width / levelWidth, height / levelHeight) * 0.8;
+  float gameFieldPixelWidth  = cellPixelSize * levelWidth;
+  float gameFieldPixelHeight = cellPixelSize * levelHeight;
+  float gameFieldCenterShiftX = (width - gameFieldPixelWidth) / 2;
+  float gameFieldCenterShiftY = (height - gameFieldPixelHeight) / 2;
+  
+  for (int y = 0; y < levelHeight; y++) {
+    for (int x = 0; x < levelWidth; x++) {
+      float pixelX = gameFieldCenterShiftX + x * cellPixelSize;
+      float pixelY = gameFieldCenterShiftY + y * cellPixelSize;
       char cell = level[y][x];
-      switch (cell) {
-        case WALL:
-          fill(100, 100, 100);
-          rect(screenX, screenY, cellSize, cellSize);
-          break;
-        case FLOOR:
-          fill(0);
-          rect(screenX, screenY, cellSize, cellSize);
-          break;
-        case EXIT:
-          fill(0, 255, 0);
-          rect(screenX, screenY, cellSize, cellSize);
-          break;
+      if (cell == WALL) {
+        fill(60);
+      } else if (cell == FLOOR) {
+        fill(200);
+      } else if (cell == DOOR) {
+        fill(255, 0, 0);
+      } else if (cell == EXIT_DOOR) {
+        fill(0, 255, 0);
       }
+      rect(pixelX, pixelY, cellPixelSize, cellPixelSize);
     }
   }
 }
